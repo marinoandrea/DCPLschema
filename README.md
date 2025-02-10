@@ -1,5 +1,7 @@
 # DCPL JSON schema
 
+[![Test](https://github.com/gsileno/DCPLschema/actions/workflows/test.yml/badge.svg)](.github/workflows/test.yml)
+
 DCPL (pronounced "disciple", standing for _duty, claim, power, claim and liability_, or _digital contracts programming language_) is a domain specific language that serves as an information model for specififying norms. As discussions on several aspects of normative concepts and normative systems are still open in the literature, DCPL (at first named DPCL) attempts to remain as much as neutral with respect to the actual semantics, yet aims to provide a minimal common ground to encode normative computational artefacts.
 
 A fast comparison:
