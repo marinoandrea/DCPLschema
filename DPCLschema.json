@@ -50,6 +50,16 @@
         }
       }
     },
+    "agent": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/atomic_object"
+        },
+        {
+          "$ref": "#/$defs/refined_object"
+        }
+      ]
+    },
     "object": {
       "anyOf": [
         {
@@ -194,7 +204,7 @@
           "$ref": "#/$defs/power_position"
         },
         "holder": {
-          "$ref": "#/$defs/object"
+          "$ref": "#/$defs/agent"
         },
         "action": {
           "$ref": "#/$defs/event"
@@ -216,10 +226,10 @@
           "$ref": "#/$defs/deontic_position"
         },
         "holder": {
-          "$ref": "#/$defs/object"
+          "$ref": "#/$defs/agent"
         },
         "counterparty": {
-          "$ref": "#/$defs/object"
+          "$ref": "#/$defs/agent"
         },
         "action": {
           "$ref": "#/$defs/event"
