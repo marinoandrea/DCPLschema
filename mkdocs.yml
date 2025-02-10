@@ -1,0 +1,56 @@
+site_name: DCPL Documentation
+
+repo_url: https://github.com/gsileno/DCPLschema
+
+theme:
+  name: material
+    
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: teal
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.footer
+    - navigation.sections
+    - navigation.path
+
+plugins:
+  - search
+  - offline
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+nav:
+  - Introduction: index.md
+  # TODO(andrea): add back once the tooling design is more mature
+  # - Getting Started:
+  #  - Installation: installation.md
+  - Information Model:
+    - Objects & Events: reference/objects-and-events.md
+    - Normative Positions: reference/positions.md
+    - Rules: reference/rules.md
+    - Composite Objects: reference/composite-objects.md
+  - Examples:
+    - Library Regulation: examples/library.md
