@@ -1,6 +1,6 @@
 # Normative Positions
 
-Normative frames are a specific type of object, representing Hohfeld’s framework of normative concepts which includes 8 notions, distributed on 2 squares, concerning respectively deontic (or duty-related) and potestative (or power-related) directives.
+Normative frames are a specific type of object, representing Hohfeld’s framework of normative concepts[^1] which includes 8 notions, distributed on 2 squares, concerning respectively deontic (or duty-related) and potestative (or power-related) directives.
 
 <figure markdown="span">
   ![Hohfeld's Framework](/assets/images/hohfeld.png){ width="400" }
@@ -41,3 +41,5 @@ With this construct one can model **power**, **liability**, **disability**, and 
             action: #return { item: book }
             violation: now() > timeout
         }
+
+[^1]: Hohfeld, W.N.: Fundamental legal conceptions as applied in judicial reasoning. Yale Law J. 26(8), 710–770 (1917)
