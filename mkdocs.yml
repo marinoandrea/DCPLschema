@@ -61,6 +61,7 @@ nav:
   # - Getting Started:
   #  - Installation: installation.md
   - Information Model:
+    - Directives: reference/directives.md
     - Objects & Events: reference/objects-and-events.md
     - Normative Positions: reference/positions.md
     - Rules: reference/rules.md
