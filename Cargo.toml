@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = ["dcpl"]
+
+[patch.crates-io]
+dcpl = { path = "dcpl" }
