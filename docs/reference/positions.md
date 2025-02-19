@@ -3,7 +3,7 @@
 Normative frames are a specific type of object, representing Hohfeld’s framework of normative concepts[^1] which includes 8 notions, distributed on 2 squares, concerning respectively deontic (or duty-related) and potestative (or power-related) directives.
 
 <figure markdown="span">
-  ![Hohfeld's Framework](/assets/images/hohfeld.png){ width="400" }
+  ![Hohfeld's Framework](../assets/images/hohfeld.png){ width="400" }
   <figcaption>Visualization of Hohfeld's framework for normative concepts</figcaption>
 </figure>
 

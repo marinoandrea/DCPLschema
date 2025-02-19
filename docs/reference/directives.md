@@ -13,4 +13,4 @@ A DCPL program is a collection of directives. Each directive constitutes a defin
 
 The following diagram offers a UML-like view on DCPL information model.
 
-![Hohfeld's Framework](/assets/images/dcpl-information-model.png)
+![Hohfeld's Framework](../assets/images/dcpl-information-model.png)
