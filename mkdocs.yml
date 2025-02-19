@@ -4,7 +4,10 @@ repo_url: https://github.com/gsileno/DCPLschema
 
 theme:
   name: material
-    
+
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+
   palette:
     - media: "(prefers-color-scheme)"
       primary: teal
