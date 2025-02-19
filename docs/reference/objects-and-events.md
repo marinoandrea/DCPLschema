@@ -37,6 +37,20 @@ DCPL aims to bring the qualification act in the foreground, and it does so by me
     person_x is member
     ```
 
+#### Set Operations
+
+Unions (using the OR operator `|`) and intersections (using the AND operator `&`) of descriptors are also descriptors.
+
+!!! example
+
+    Any agent which is either `student` or `staff` is also a `university_member`:
+
+    ```
+    student | staff becomes university_member
+    ```
+
+A union descriptor can be expected to have only properties that are shared among all the descriptors. An intersection descriptor instead can be expected to have all the properties combined.
+
 #### Primitive Types
 
 Supported primitive types are all descriptors, and their instances are automatically described with them:
@@ -60,20 +74,6 @@ Each object and each of its properties naturally act as a descriptor.
     "urn:org:x" becomes organization
     "urn:dataset:a" becomes organization.dataset
     ```
-
-#### Set Operations
-
-Unions (using the OR operator `|`) and intersections (using the AND operator `&`) of descriptors are also descriptors.
-
-!!! example
-
-    Any agent which is either `student` or `staff` is also a `university_member`:
-
-    ```
-    student | staff becomes university_member
-    ```
-
-A union descriptor can be expected to have only properties that are shared among all the descriptors. An intersection descriptor instead can be expected to have all the properties combined.
 
 ### Agents
 
