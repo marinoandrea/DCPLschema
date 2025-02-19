@@ -1,0 +1,71 @@
+site_name: DCPL Documentation
+
+repo_url: https://github.com/gsileno/DCPLschema
+
+theme:
+  name: material
+    
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: teal
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.footer
+    - navigation.sections
+    - navigation.path
+    - content.code.copy
+    - content.code.select
+
+
+
+plugins:
+  - search
+  - offline
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.blocks.caption
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Introduction: index.md
+  # TODO(andrea): add back once the tooling design is more mature
+  # - Getting Started:
+  #  - Installation: installation.md
+  - Information Model:
+    - Directives: reference/directives.md
+    - Objects & Events: reference/objects-and-events.md
+    - Normative Positions: reference/positions.md
+    - Rules: reference/rules.md
+    - Composite Objects: reference/composite-objects.md
+  - Examples:
+    - Library Regulation: examples/library.md
+    - Comparison with ODRL: examples/comparison-odrl.md
