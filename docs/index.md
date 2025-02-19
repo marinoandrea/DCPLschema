@@ -2,6 +2,10 @@
 
 DCPL (pronounced "disciple", standing for _duty, claim, power, claim and liability_, or _digital contracts programming language_) is a domain specific language that serves as an information model for specififying norms. As discussions on several aspects of normative concepts and normative systems are still open in the literature, DCPL (at first named DPCL) attempts to remain as much as neutral with respect to the actual semantics, yet aims to provide a minimal common ground to encode normative computational artefacts.
 
+!!! warning
+
+    This documentation is a work in progress and might contain some inaccuracies.
+
 ## Comparison with other norm-specification languages
 
 - DCPL like [ODRL](https://www.w3.org/TR/odrl-model/) aims to provive primarily an informational model, and is JSON-centred, but DCPL include power categories, and focuses on normative mechanisms (it does not include inherently concepts as assets);
