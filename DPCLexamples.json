@@ -34,20 +34,14 @@
     "action": {
       "reference": "#marry",
       "refinement": {
-        "patient": [
-          "john",
-          "paul"
-        ]
+        "patient": ["john", "paul"]
       }
     },
     "consequence": {
       "plus": {
         "reference": "married",
         "refinement": {
-          "patient": [
-            "john",
-            "paul"
-          ]
+          "patient": ["john", "paul"]
         }
       }
     }
@@ -83,10 +77,7 @@
   },
   {
     "compound": "fine",
-    "params": [
-      "x",
-      "y"
-    ],
+    "params": ["x", "y"],
     "content": [
       {
         "position": "duty",
@@ -129,11 +120,7 @@
     "condition": "book",
     "conclusion": {
       "compound": "borrowing",
-      "params": [
-        "borrower",
-        "lender",
-        "item"
-      ],
+      "params": ["borrower", "lender", "item"],
       "content": [
         {
           "position": "duty",

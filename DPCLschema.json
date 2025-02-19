@@ -50,6 +50,16 @@
         }
       }
     },
+    "agent": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/atomic_object"
+        },
+        {
+          "$ref": "#/$defs/refined_object"
+        }
+      ]
+    },
     "object": {
       "anyOf": [
         {
@@ -83,10 +93,7 @@
           "$ref": "#/$defs/atomic_event"
         }
       },
-      "required": [
-        "reference",
-        "refinement"
-      ],
+      "required": ["reference", "refinement"],
       "additionalProperties": false
     },
     "transition_event": {
@@ -111,14 +118,10 @@
       },
       "oneOf": [
         {
-          "required": [
-            "plus"
-          ]
+          "required": ["plus"]
         },
         {
-          "required": [
-            "minus"
-          ]
+          "required": ["minus"]
         }
       ],
       "additionalProperties": false
@@ -138,16 +141,10 @@
       },
       "oneOf": [
         {
-          "required": [
-            "entity",
-            "in"
-          ]
+          "required": ["entity", "in"]
         },
         {
-          "required": [
-            "entity",
-            "out"
-          ]
+          "required": ["entity", "out"]
         }
       ],
       "additionalProperties": false
@@ -181,10 +178,7 @@
           "$ref": "#/$defs/atomic_object"
         }
       },
-      "required": [
-        "condition",
-        "conclusion"
-      ],
+      "required": ["condition", "conclusion"],
       "additionalProperties": false
     },
     "reactive_rule": {
@@ -200,9 +194,7 @@
           "$ref": "#/$defs/atomic_object"
         }
       },
-      "required": [
-        "reaction"
-      ],
+      "required": ["reaction"],
       "additionalProperties": false
     },
     "power_frame": {
@@ -212,7 +204,7 @@
           "$ref": "#/$defs/power_position"
         },
         "holder": {
-          "$ref": "#/$defs/object"
+          "$ref": "#/$defs/agent"
         },
         "action": {
           "$ref": "#/$defs/event"
@@ -224,11 +216,7 @@
           "$ref": "#/$defs/atomic_object"
         }
       },
-      "required": [
-        "position",
-        "action",
-        "consequence"
-      ],
+      "required": ["position", "action", "consequence"],
       "additionalProperties": false
     },
     "deontic_frame": {
@@ -238,10 +226,10 @@
           "$ref": "#/$defs/deontic_position"
         },
         "holder": {
-          "$ref": "#/$defs/object"
+          "$ref": "#/$defs/agent"
         },
         "counterparty": {
-          "$ref": "#/$defs/object"
+          "$ref": "#/$defs/agent"
         },
         "action": {
           "$ref": "#/$defs/event"
@@ -277,10 +265,7 @@
           "$ref": "#/$defs/atomic_object"
         }
       },
-      "required": [
-        "position",
-        "action"
-      ],
+      "required": ["position", "action"],
       "additionalProperties": false
     },
     "compound_frame": {
@@ -302,10 +287,7 @@
           }
         }
       },
-      "required": [
-        "compound",
-        "content"
-      ],
+      "required": ["compound", "content"],
       "additionalProperties": false
     },
     "directive": {
