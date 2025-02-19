@@ -40,6 +40,7 @@ A deontic frame is an object which can be of any of the following classes: `duty
 | `counterparty` | [`agent`](../reference/objects-and-events.md#agents)          | `*`         | the agent which is interested in the fulfillment of the duty     |
 | `action`       | [`event`](../reference/objects-and-events.md#events)          | `undefined` | the action to perform in order to fulfill the duty               |
 | `violation`    | [`external_expression`](../reference/external-expressions.md) | `undefined` | an expression to evaluate to determine when the duty is violated |
+| `termination`  | [`external_expression`](../reference/external-expressions.md) | `undefined` | an expression to evaluate when the duty should terminate         |
 
 All objects are here referred through [descriptors](../reference/objects-and-events.md#descriptors), which can be complete or partial. The referring mechanism is similar to Cascading Style Sheets (CSS) in the sense that the refinement may reduce the number of objects to which the policy applies.
 
