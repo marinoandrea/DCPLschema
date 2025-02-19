@@ -1,10 +1,13 @@
 # DCPL JSON schema
 
 [![Test](https://github.com/gsileno/DCPLschema/actions/workflows/test.yml/badge.svg)](.github/workflows/test.yml)
+[![Static Badge](https://img.shields.io/badge/documentation-read?logo=readme&logoColor=white&color=blue&link=https%3A%2F%2Fuva-cci.github.io%2FDCPLschema%2F)](https://uva-cci.github.io/DCPLschema/)
 
 DCPL (pronounced "disciple", standing for _duty, claim, power, claim and liability_, or _digital contracts programming language_) is a domain specific language that serves as an information model for specififying norms. As discussions on several aspects of normative concepts and normative systems are still open in the literature, DCPL (at first named DPCL) attempts to remain as much as neutral with respect to the actual semantics, yet aims to provide a minimal common ground to encode normative computational artefacts.
 
-A fast comparison:
+The documentation for DCPL information model can be found [here](https://uva-cci.github.io/DCPLschema/).
+
+## Comparison with other norm-specification languages
 
 - DPCL like ODRL (https://www.w3.org/TR/odrl-model/) aims to provive primarily an informational model, and is JSON-centred, but DPCL include power categories, and focuses on normative mechanisms (it does not include inherently concepts as assets);
 - DPCL like FLINT/eFLINT (https://gitlab.com/eflint) takes as primitives frames constructed from Hohfeld's framework of normative concepts, but DPCL strictly separates conditional from normative aspects, and allow specifying a wider array of normative concepts;
