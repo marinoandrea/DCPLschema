@@ -2,6 +2,8 @@ site_name: DCPL Documentation
 
 repo_url: https://github.com/gsileno/DCPLschema
 
+site_url: https://uva-cci.github.io/DCPLschema/
+
 theme:
   name: material
     
