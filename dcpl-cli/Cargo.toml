@@ -1,0 +1,9 @@
+[package]
+name = "dcpl-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dcpl = { path = "../dcpl" }
+ariadne = "0.4.0"
+chumsky = { version = "1.0.0-alpha.8" }
